@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-devanagari: var(--font-devanagari), ui-sans-serif, system-ui, sans-serif;
+  --font-yatra: var(--font-yatra), ui-sans-serif, system-ui, sans-serif;
+  --font-didoska: var(--font-didoska), Georgia, serif;
+  --font-cinzel: var(--font-cinzel), serif;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-black/30 backdrop-blur-xl border border-white/10 shadow-2xl;
+  }
+}
+
+@keyframes spin-disc {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-disc {
+  animation: spin-disc 10s linear infinite;
+}
+
+.animate-disc-paused {
+  animation: spin-disc 10s linear infinite;
+  animation-play-state: paused;
+}
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
