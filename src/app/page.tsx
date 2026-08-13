@@ -7,8 +7,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="relative w-screen h-screen overflow-hidden bg-black selection:bg-white/30">
-      {/* Full resolution Background Image focused on the right side where Salman Khan is */}
-      <div className="fixed inset-0 z-0">
+      {/* Background Image centered from both sides (horizontally & vertically) */}
+      <div className="fixed inset-0 z-0 flex items-center justify-center">
         <Image
           src={siteConfig.background}
           alt="Background Wallpaper"
@@ -16,10 +16,10 @@ export default function Home() {
           priority
           unoptimized
           quality={100}
-          className="object-cover object-[85%_center] md:object-center w-full h-full"
+          className="object-cover object-center w-full h-full"
         />
-        {/* Subtle ambient gradient overlay for depth and text legibility */}
-        <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/70 via-black/20 to-black/40 pointer-events-none" />
+        {/* Ambient gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/50 via-transparent to-black/30 pointer-events-none" />
       </div>
 
       {/* Responsive Calligraphy Logo Overlay - Centered on Mobile, Left-aligned on Desktop */}
