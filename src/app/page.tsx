@@ -22,16 +22,16 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/60 via-transparent to-black/30 pointer-events-none" />
       </div>
 
-      {/* Logo Image Centered Vertically AND Horizontally */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -mt-10 sm:-mt-14 z-10 pointer-events-none select-none flex flex-col items-center justify-center text-center">
+      {/* Enlarged Logo Image Centered Vertically AND Horizontally */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -mt-12 sm:-mt-16 z-10 pointer-events-none select-none flex flex-col items-center justify-center text-center">
         <Image
           src="/bhai-ke-gaane-logo.png"
           alt="Bhai ke Gaane Logo"
-          width={600}
-          height={300}
+          width={700}
+          height={350}
           priority
           unoptimized
-          className="w-72 sm:w-[440px] md:w-[560px] h-auto drop-shadow-[0_12px_36px_rgba(0,0,0,0.95)]"
+          className="w-80 sm:w-[520px] md:w-[680px] h-auto drop-shadow-[0_12px_36px_rgba(0,0,0,0.95)]"
         />
       </div>
 
