@@ -22,8 +22,8 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/60 via-transparent to-black/30 pointer-events-none" />
       </div>
 
-      {/* Logo Image Centered from both sides (Horizontally Centered on all screen sizes) */}
-      <div className="absolute top-8 sm:top-12 left-1/2 -translate-x-1/2 z-10 pointer-events-none select-none flex flex-col items-center text-center">
+      {/* Logo Image Centered Vertically AND Horizontally */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -mt-10 sm:-mt-14 z-10 pointer-events-none select-none flex flex-col items-center justify-center text-center">
         <Image
           src="/bhai-ke-gaane-logo.png"
           alt="Bhai ke Gaane Logo"
@@ -31,7 +31,7 @@ export default function Home() {
           height={300}
           priority
           unoptimized
-          className="w-64 sm:w-[400px] md:w-[520px] h-auto drop-shadow-[0_10px_30px_rgba(0,0,0,0.9)]"
+          className="w-72 sm:w-[440px] md:w-[560px] h-auto drop-shadow-[0_12px_36px_rgba(0,0,0,0.95)]"
         />
       </div>
 
