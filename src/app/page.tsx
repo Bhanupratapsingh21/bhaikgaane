@@ -24,10 +24,10 @@ export default function Home() {
 
       {/* 
         Logo Image Positioning:
-        - Mobile/Small Screen: Lower down towards bottom/center with top margin (top-[35%] mt-4 left-1/2 -translate-x-1/2)
-        - Desktop/Bigger Screen: Top-Left corner (md:top-10 md:left-12 md:translate-x-0 md:translate-y-0)
+        - Mobile/Small Screen: Pushed down further with extra top margin (top-[40%] mt-10 left-1/2 -translate-x-1/2)
+        - Desktop/Bigger Screen: Top-Left corner (md:top-10 md:left-12 md:translate-x-0 md:translate-y-0 md:mt-0)
       */}
-      <div className="absolute top-[35%] left-1/2 -translate-x-1/2 mt-4 md:top-10 md:left-12 md:translate-x-0 md:translate-y-0 md:mt-0 z-10 pointer-events-none select-none flex flex-col items-center md:items-start text-center md:text-left w-full md:w-auto px-4 md:px-0">
+      <div className="absolute top-[40%] left-1/2 -translate-x-1/2 mt-10 sm:mt-12 md:top-10 md:left-12 md:translate-x-0 md:translate-y-0 md:mt-0 z-10 pointer-events-none select-none flex flex-col items-center md:items-start text-center md:text-left w-full md:w-auto px-4 md:px-0">
         <Image
           src="/bhai-ke-gaane-logo.png"
           alt="Bhai ke Gaane Logo"
